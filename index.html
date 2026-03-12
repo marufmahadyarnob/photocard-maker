@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Template Studio | Maruf Mahady</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>📸 Photo Template Studio by Maruf</h1>
+</header>
+
+<!-- Template Search -->
+<div class="searchArea">
+    <input type="text" id="templateSearch" placeholder="Search template or category...">
+</div>
+
+<!-- Template sections -->
+<div id="templateSections"></div>
+
+<!-- Image upload -->
+<div class="uploadArea">
+    <label>আপনার ছবি আপলোড করুন:</label>
+    <input type="file" id="upload">
+</div>
+
+<!-- Text boxes -->
+<div class="uploadArea">
+    <label>Text 1 লিখুন:</label>
+    <input type="text" id="text1Input" placeholder="Text 1" maxlength="50">
+    <label>Text 2 লিখুন:</label>
+    <input type="text" id="text2Input" placeholder="Text 2" maxlength="50">
+</div>
+
+<!-- Editor -->
+<div class="editor" id="editor">
+    <img id="userPhoto" src="" alt="">
+    <img id="templateLayer" src="" alt="">
+    <div id="text1" class="editorText" style="display:none;">Text 1</div>
+    <div id="text2" class="editorText" style="display:none;">Text 2</div>
+</div>
+
+<!-- Text color -->
+<div class="textControls">
+    <label>Text 1 Color: <input type="color" id="text1Color" value="#000000"></label>
+    <label>Text 2 Color: <input type="color" id="text2Color" value="#000000"></label>
+</div>
+
+<!-- Controls -->
+<div class="controls">
+    <label>Zoom</label>
+    <input type="range" id="zoomSlider" min="50" max="300" value="150">
+    <label>Rotate</label>
+    <input type="range" id="rotateSlider" min="-180" max="180" value="0">
+    <button onclick="resetEditor()">Reset</button>
+    <button onclick="downloadImage()">Download</button>
+</div>
+
+<!-- View Modal -->
+<div id="viewModal">
+    <span id="closeView">&times;</span>
+    <img id="viewImage" alt="">
+</div>
+
+<footer>
+    <h4>Crafted with ❤️ by <span class="footerName">Maruf Mahady Arnob</span></h4>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
+<script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

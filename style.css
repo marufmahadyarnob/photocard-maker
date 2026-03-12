@@ -1,0 +1,167 @@
+body{
+    background:#081421;
+    color:white;
+    font-family:'Hind Siliguri', 'Noto Sans Bengali', sans-serif;
+    text-align:center;
+    margin:0;
+}
+header h1{
+    margin:20px 0;
+    font-size:2rem;
+    color:#00aaff;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+}
+.searchArea{margin:20px;}
+.searchArea input{
+    padding:10px; width:90%; max-width:400px;
+    border-radius:5px; border:none;
+}
+.templateSection{
+    margin:30px 0;
+}
+.templateSection h3{
+    text-align:center;
+    display:inline-block;
+    padding:10px 20px;
+    border:2px solid #00aaff;
+    border-radius:10px;
+    background:rgba(11,27,52,0.7);
+    margin-bottom:15px;
+}
+.templateGallery{
+    display:flex;
+    overflow-x:auto;
+    gap:10px;
+    padding:10px;
+}
+.templateCard{
+    background:#0b1b34;
+    padding:5px;
+    border-radius:8px;
+    min-width:200px;
+    max-width:120px;
+    text-align:center;
+    transition:.3s;
+}
+.templateCard img{
+    width:80%;
+    height:80%px;
+    border-radius:3px;
+    object-fit:cover;
+    cursor:pointer;
+}
+.templateCard:hover{
+    transform:scale(1.05);
+}
+.templateCard button{
+    margin:3px 2px;
+    padding:4px 8px;
+    border:none;
+    border-radius:4px;
+    background:#00aaff;
+    color:white;
+    cursor:pointer;
+    font-size:12px;
+}
+.uploadArea{
+    margin:20px;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    align-items:center;
+}
+.uploadArea label{
+    font-weight:bold;
+}
+.uploadArea input[type="text"], .uploadArea input[type="file"]{
+    padding:10px;
+    width:90%;
+    max-width:400px;
+    border-radius:5px;
+    border:none;
+}
+.editor{
+    position:relative;
+    width:90%;
+    max-width:600px;
+    margin:auto;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 0 25px rgba(0,0,0,.6);
+    background:white;
+}
+#userPhoto{
+    position:absolute;
+    top:50%;
+    left:50%;
+    width:150px;
+    cursor:move;
+    transform-origin:center;
+    display:none;
+    transition:.2s;
+    z-index:10;
+}
+#templateLayer{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit:contain;
+    pointer-events:none;
+    z-index:20;
+}
+.editorText{
+    position:absolute;
+    cursor:move;
+    font-size:28px;
+    font-weight:bold;
+    z-index:30;
+    color:#000;
+    white-space:nowrap;
+}
+.textControls{
+    margin:15px;
+}
+.textControls label{
+    margin:0 10px;
+}
+.controls{margin:30px;}
+.controls input{width:200px; margin:10px;}
+.controls button{
+    padding:10px 20px;
+    border:none;
+    border-radius:6px;
+    background:#00aaff;
+    color:white;
+    cursor:pointer;
+    font-size:14px;
+}
+#viewModal{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.9);
+    display:none;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    z-index:1000;
+}
+#viewModal img{max-width:90%; max-height:90%;}
+#closeView{
+    position:absolute;
+    top:20px;
+    right:30px;
+    font-size:40px;
+    cursor:pointer;
+}
+footer{
+    background:#0b1b34;
+    padding:20px 0;
+    box-shadow: 0 -5px 15px rgba(0,0,0,0.5);
+}
+footer h4{
+    margin:0;
+    font-weight:normal;
+    color:#00aaff;
+}
