@@ -2,9 +2,11 @@
     {"name":"ঈদ শুভেচ্ছা ১","src":"templates/template1.png","category":"ঈদ"},
     {"name":"ঈদ শুভেচ্ছা ২","src":"templates/template2.png","category":"ঈদ"},
     {"name":"ঈদুল ফিতরের শুভেচ্ছা ১","src":"templates/template3.png","category":"ঈদ"},
+    {"name":"ঈদ শুভেচ্ছা ৩","src":"templates/template4.png","category":"ঈদ"},
     {"name":"পূজা স্পেশাল","src":"templates/template23.png","category":"পূজা"},
     {"name":"নববর্ষ উদযাপন","src":"templates/template33.png","category":"নববর্ষ"},
     {"name":"রাজনৈতিক পোস্ট","src":"templates/template34.png","category":"রাজনীতি"}
 
 ]
+
 
