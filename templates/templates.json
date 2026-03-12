@@ -1,0 +1,7 @@
+[
+    {"name":"ঈদ মোবারাক ব্যানার ১","src":"templates/template1.png","category":"ঈদ"},
+    {"name":"ঈদ স্পেশাল ২","src":"templates/template5.png","category":"ঈদ"},
+    {"name":"পূজা স্পেশাল","src":"templates/template2.png","category":"পূজা"},
+    {"name":"নববর্ষ উদযাপন","src":"templates/template3.png","category":"নববর্ষ"},
+    {"name":"রাজনৈতিক পোস্ট","src":"templates/template4.png","category":"রাজনীতি"}
+]
